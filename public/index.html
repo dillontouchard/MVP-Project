@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <div id="selections">
+        <button id="sports">Sports</button>
+        <button id="geography">Geography</button>
+        <button id="history">History</button>
+        <button id="mythology">Mythology</button>
+        <button id="animals">Animals</button>
+    </div>
+    <container id="trivia">
+        <h1 id="Mania">Trivia Mania</h1>
+        <h2 id="question">Click on a Category from the top to start</h2>
+        <button id="correct">Answers you'll click on go here,</button>
+        <button id="incorrect0">Once finished you'll be able to see your score,</button>
+        <button id="incorrect1">There will be ten total questions,</button>
+        <button id="incorrect2">After answering a question use the next button to move on, Good Luck!</button>
+    </container>
+    <button id="next">Next Question</button>
+    <div class="overlay" id="overlay">
+        <div class="modal">
+          <p>Please enter your player name to save your score:</p>
+          <input type="text" id="usernameInput">
+          <button onclick="submitUsername()">Submit</button>
+        </div>
+      </div>
+</body>
+</html>
