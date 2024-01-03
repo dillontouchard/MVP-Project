@@ -112,15 +112,19 @@ $('#animals').on('click', function() {
 //Event Listeners For Multiple Choice
 $('#correct').on('click', function() {
     correctAnswers += 1;
+    correctPopup();
 });
 $('#incorrect0').on('click', function() {
     incorrectAnswers += 1;
+    incorrectPopup();
 });
 $('#incorrect1').on('click', function() {
     incorrectAnswers += 1;
+    incorrectPopup();
 });
 $('#incorrect2').on('click', function() {
     incorrectAnswers += 1;
+    incorrectPopup();
 });
 
 //Next Question Event Listener
@@ -196,7 +200,7 @@ function submitUsername() {
     const username = document.getElementById('usernameInput').value;
     
     if (username) {
-      alert(`Nice Job! You had ${incorrectAnswers} incorrect responses before getting the 10 correct responses`);
+      alert(`Nice Job! You had ${incorrectAnswers} incorrect responses before getting the 10 correct responses! Click OK and select a new category to play again!`);
       document.getElementById('overlay').style.display = 'none';
       dataObj.name = username;
       dataObj.gamescore = correctAnswers;
@@ -209,4 +213,19 @@ function submitUsername() {
       alert("Please enter a username.");
     }
 
+}
+//Popups for correct or incorrect guesses
+function correctPopup() {
+    let popup = document.getElementById("correctPopup");
+    popup.classList.toggle("show");
+    setTimeout(function() {
+        popup.classList.toggle("show")
+    }, 2000); 
+}
+function incorrectPopup() {
+    let popup = document.getElementById("incorrectPopup");
+    popup.classList.toggle("show");
+    setTimeout(function() {
+        popup.classList.toggle("show")
+    }, 2000); 
 }

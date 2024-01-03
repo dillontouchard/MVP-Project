@@ -1,39 +1,137 @@
+header {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
 body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
 }
-
+footer {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
 #selections {
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
-    padding: 5px;
+    padding: 5px;   
 }
-
+#sports {
+    color: aqua;
+    font-family: "Rubik Doodle Shadow", sans-serif;
+    font-size: 25px;
+    background-color:#d8885a;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#geography {
+    color: aqua;
+    font-family: "Rubik Doodle Shadow", sans-serif;
+    font-size: 25px;
+    background-color:#d8885a;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#history {
+    color: aqua;
+    font-family: "Rubik Doodle Shadow", sans-serif;
+    font-size: 25px;
+    background-color:#d8885a;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#mythology {
+    color: aqua;
+    font-family: "Rubik Doodle Shadow", sans-serif;
+    font-size: 25px;
+    background-color:#d8885a;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#animals {
+    color: aqua;
+    font-family: "Rubik Doodle Shadow", sans-serif;
+    font-size: 25px;
+    background-color:#d8885a;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
 #trivia {
     margin-top: 20px;
     display: grid;
     align-content: center;
     justify-content: center;
-    height: 200px;
+    height: 300px;
     width: 500px;
     padding: 10px;
     align-self: center;
     justify-self: center;
     align-items: center;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 #Mania {
-    align-self: flex-start;
+    font-family: "Rubik Doodle Shadow", sans-serif;
+    font-size: 50px;
+    align-self: center;
     justify-self: center;
+    color: #fff;
+    text-shadow:-4px 4px #ef3550,
+    -8px 8px #f48fb1,
+    -12px 12px #7e57c2,
+    -16px 16px #2196f3,
+    -20px 20px #26c6da,
+    -24px 24px #43a047,
+    -28px 28px #eeff41,
+    -32px 32px #f9a825,
+    -36px 36px #ff5722;
+}
+#question {
+    font-family: "Rubik Doodle Shadow", sans-serif;
+    border-top: dotted blue;
+    border-left: dotted yellow;
+    border-bottom: dotted purple;
+    border-right: dotted red;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#correct {
+    font-family: "Roboto Slab", sans-serif;
+    background-color:#d8885a;
+    padding: 4px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#incorrect0 {
+    font-family: "Roboto Slab", sans-serif;
+    background-color:#d8885a;
+    padding: 4px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#incorrect1 {
+    font-family: "Roboto Slab", sans-serif;
+    background-color:#d8885a;
+    padding: 4px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#incorrect2 {
+    font-family: "Roboto Slab", sans-serif;
+    background-color:#d8885a;
+    padding: 4px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 #next {
+    color: aqua;
+    font-family: "Rubik Doodle Shadow", sans-serif;
+    font-size: 20px;
     margin-top: 50px;
     justify-self: center;
     align-self: center;
-    
-    
+    background-color:#d8885a;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .overlay {
     display: none;
@@ -45,9 +143,32 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     justify-content: center;
     align-items: center;
-  }
-  .modal {
+}
+.modal {
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
-  }
+}
+.popup {
+    position: relative;
+    display: inline-block;
+}
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+} 
