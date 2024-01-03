@@ -1,4 +1,4 @@
-DROP TABLE gamescores IF EXISTS;
+DROP TABLE IF EXISTS gamescores;
 
 CREATE TABLE gamescores (
     gameID serial PRIMARY KEY NOT NULL,
